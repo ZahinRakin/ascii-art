@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package asciiart;
+
+service AsciiArtService {
+  rpc GenerateArt (ArtRequest) returns (ArtResponse) {}
+  rpc GetArtStyles (StyleRequest) returns (StyleResponse) {}
+}
+
+message ArtRequest {
+  string text = 1;
+  string style = 2;  // "block", "simple", "banner", etc.
+}
+
+message ArtResponse {
+  string art = 1;
+}
+
+message StyleRequest {}  // Empty request
+
+message StyleResponse {
+  repeated string styles = 1;
+}

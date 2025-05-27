@@ -20,10 +20,10 @@
 #          backend            #
 #-----------------------------#
 # create python environement
-	- python3 -m venv venv
+	- python3 -m venv venv (for ubuntu)
 
 # start python env
-	- source venv/vin/activate
+	- source venv/vin/activate (for ubuntu)
 	
 # install these python libraries
 	- pip install grpcio grpcio-tools pyfiglet protobuf

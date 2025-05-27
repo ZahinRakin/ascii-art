@@ -8,7 +8,7 @@
 	- source venv/vin/activate for ubuntu
 	- ./venv/Scripts/activate for windows
 
-# install this library
+# install these python libraries
 	- pip install grpcio grpcio-tools protobuf
 
 # run the code
